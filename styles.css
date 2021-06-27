@@ -5,7 +5,9 @@
 
 
 
-
+body{
+  width: 100%;
+}
 h1,h2,h3,h4,h5,h6{
   font-family: "AvenirNextBold";
   color: white;
@@ -21,14 +23,12 @@ p{
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.container-fluid{
-  background-color: black;
+section{
+    min-height: 100vh;
 }
 
-@media screen and (min-width:768px) and (max-width: 992px) {
-  .title{
-    width: 70%;
-  }
+.container-fluid{
+  background-color: black;
 }
 
 .navbar-nav li a:hover,
@@ -40,3 +40,104 @@ p{
 .navbar-toggler:hover{
   outline: #33a9e2 solid !important;
 }
+
+.bg-black{
+  background-color: black;
+  color: white;
+}
+
+@media screen and (min-width:768px) and (max-width: 992px) {
+  .title{
+    width: 70%;
+  }
+}
+
+
+.home{
+    background-image: url('assets/images/home.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #060606;
+    height: 100vh;
+  }
+  
+
+  
+.passion{
+    color: #33a9e2;
+    font-family: MinionPro;
+    text-transform: capitalize;
+    font-size: 1em;
+    text-shadow: black 2px 2px 1px;
+}
+  
+  
+.caption{
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+    font-size: 1.25rem;
+    font-family: "AvenirNextBold", sans-serif;
+
+}
+  
+@media screen and (max-width: 1024px) {
+    .home{
+      background-image: url('assets/images/home-mobile.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .footer-logo{
+      width: 37.5%;
+    }
+}
+
+
+.heading{
+  font-size: 2em;
+  text-transform: lowercase;
+}
+
+footer{
+  background-color: black;
+}
+
+h4{
+  text-transform: lowercase;
+}
+
+a {
+  color: white;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 1.25em;
+  }
+
+
+  .linkedin-logo {
+    width: 8%;
+  }
+
+  .footer-text{
+    font-size: 0.70em;
+    white-space: nowrap;
+  }
+}
+
+
+@media screen and (max-width: 340px) {
+  .footer-text{
+    font-size: 0.60em;
+    white-space: nowrap;
+  }
+
+}
+
+
+
+  
+  
