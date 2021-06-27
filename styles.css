@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/styles/w3.css';
+@import './assets/fonts/fonts.css';
+
+
+
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "AvenirNextBold";
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar{
+    background-color: black;
+    color: white;
+}
+
+p{
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.container-fluid{
+  background-color: black;
+}
+
+@media screen and (min-width:768px) and (max-width: 992px) {
+  .title{
+    width: 70%;
+  }
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+  color: #33a9e2 !important;
+
+}
+
+.navbar-toggler:hover{
+  outline: #33a9e2 solid !important;
+}
