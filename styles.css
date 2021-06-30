@@ -5,6 +5,8 @@
 body{
   width: 100%;
   background-color:black;
+  scroll-padding-top: 50px;
+  overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -138,7 +140,7 @@ a {
   color: white;
 }
 
-/* If the screen size is 768px wide or less, set the font-size of <div> to 30px */
+
 @media screen and (max-width: 768px) {
   .heading {
     font-size: 1.25em;
