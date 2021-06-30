@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import './assets/styles/w3.css';
-@import './assets/fonts/fonts.css';
+@import 'assets/fonts/fonts.css';
 
 body{
   width: 100%;
@@ -102,8 +101,12 @@ section, footer{
   flex-flow: column;
   align-items: center;
   justify-content: flex-start;
-  text-align: center;
-  
+  text-align: center; 
+}
+
+#email-address{
+  text-transform: lowercase;
+  font-size: 2rem;
 }
   
 @media screen and (max-width: 1024px) {
@@ -114,15 +117,11 @@ section, footer{
       background-position: center;
     }
     .footer-logo{
-      width: 37.5%;
+      width: 45vw;
     }
 }
 
 
-.heading{
-  font-size: 2em;
-  text-transform: lowercase;
-}
 
 footer{
   background-color: black;
@@ -131,7 +130,6 @@ footer{
 .footer-text{
   font-size: 1.25rem;
   font-family: "AvenirNextBold", sans-serif;
-
 }
 
 
@@ -146,13 +144,17 @@ a {
     font-size: 1.25em;
   }
 
+  #email-address{
+    font-size: 1.25rem;
+  }
+
 
   .linkedin-logo {
-    width: 8%;
+    width: 5vw;
   }
 
   .footer-text{
-    font-size: 0.70em;
+    font-size: 0.7rem;
     white-space: nowrap;
   }
 }
@@ -166,3 +168,7 @@ a {
 
 }
 
+svg{
+  color: white;
+  fill: white;
+}
