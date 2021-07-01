@@ -48,12 +48,6 @@ section, footer{
   color: white;
 }
 
-@media screen and (min-width:768px) and (max-width: 992px) {
-  .title{
-    width: 70%;
-  }
-}
-
 
 .home{
     background-image: url('assets/images/home.jpg');
@@ -109,27 +103,27 @@ section, footer{
   font-size: 2rem;
 }
   
-@media screen and (max-width: 1024px) {
-    .home{
-      background-image: url('assets/images/home-mobile.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    .footer-logo{
-      width: 45vw;
-    }
-}
-
-
-
 footer{
   background-color: black;
 }
 
-.footer-text{
+#linkedin{
   font-size: 1.25rem;
   font-family: "AvenirNextBold", sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+}
+
+#linkedin-logo {
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+
+#footer-logo{
+  width: 200px;
+  padding: 1rem;
 }
 
 
@@ -138,37 +132,62 @@ a {
   color: white;
 }
 
+@media screen and (max-width: 1024px) {
+  .home{
+    background-image: url('assets/images/home-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
 
 @media screen and (max-width: 768px) {
-  .heading {
-    font-size: 1.25em;
+
+  #email-address{
+    font-size: 1.5rem;
+  }
+
+  #footer-logo{
+    width: 200px;
+  }
+
+  #linkedin-logo {
+    fill: white;
+    width: 24px;
+    height: 24px;
+  }
+  
+  #linkedin{
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  #footer-logo{
+    width: 150px;
   }
 
   #email-address{
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
-
-  .linkedin-logo {
-    width: 5vw;
+  #linkedin-logo {
+    fill: white;
+    width: 16px;
+    height: 16px;
   }
-
-  .footer-text{
+  
+  #linkedin{
     font-size: 0.7rem;
     white-space: nowrap;
   }
 }
 
 
-@media screen and (max-width: 340px) {
-  .footer-text{
-    font-size: 0.60em;
-    white-space: nowrap;
+@media screen and (min-width:768px) and (max-width: 992px) {
+  .title{
+    width: 70%;
   }
-
-}
-
-svg{
-  color: white;
-  fill: white;
 }
