@@ -43,9 +43,26 @@ section, footer{
   outline: #33a9e2 solid !important;
 }
 
+div.bar{
+  width: 45%;
+  height: 15px;
+  margin: 2.5rem 0;
+  margin-left: auto;
+}
+
+
+div.bar.full-bar{
+  width: 100%;
+}
+
 .bg-black{
   background-color: black;
   color: white;
+}
+
+.bg-white{
+  background-color: white;
+  color: black;
 }
 
 
@@ -98,6 +115,11 @@ section, footer{
   text-align: center; 
 }
 
+.collab-logo{
+  width: 100%;
+  padding: 1rem;
+}
+
 #email-address{
   text-transform: lowercase;
   font-size: 2rem;
@@ -125,6 +147,10 @@ footer{
   width: 200px;
   padding: 1rem;
 }
+
+
+
+
 
 
 
@@ -161,6 +187,10 @@ a {
     font-size: 1rem;
     white-space: nowrap;
   }
+
+  div.bar{
+    height: 10px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -182,12 +212,5 @@ a {
   #linkedin{
     font-size: 0.7rem;
     white-space: nowrap;
-  }
-}
-
-
-@media screen and (min-width:768px) and (max-width: 992px) {
-  .title{
-    width: 70%;
   }
 }
