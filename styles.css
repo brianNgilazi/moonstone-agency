@@ -100,8 +100,6 @@ div.bar.full-bar{
 #home-spacer{
     height: 30vh;
 }
-
-
   
   
 #lead{
@@ -111,6 +109,8 @@ div.bar.full-bar{
   font-size: 3rem;
   font-family: "AvenirNextBold", sans-serif;
   justify-self: flex-start;
+  text-shadow: black 2px 2px 4px;
+
 }
 
   
