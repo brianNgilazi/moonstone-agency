@@ -33,11 +33,16 @@ section, footer{
 
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255,255,255,.75);
+  color: rgba(255,255,255,.85);
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
   color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  transition: all 0.2s ease-in-out;
 }
 
 
@@ -70,30 +75,46 @@ div.bar.full-bar{
 
 
 .home{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding-right: 2rem;
   background-image: url('assets/images/home.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #060606;
-  height: 100vh;
+  min-height: 90vh;
+
 }
-  
+
+#main-logo{
+  width: 40%;
+  margin-bottom: auto;
+}
+
+#home-spacer{
+    height: 30vh;
+}
+
 
   
-.passion{
+  
+#lead{
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-family: "AvenirNextBold", sans-serif;
+  justify-self: flex-start;
+}
+
+  
+#lead>.passion{
   color: var(--accent);
   font-family: MinionPro;
-  text-transform: capitalize;
   font-size: 1em;
   text-shadow: black 2px 2px 1px;
-}
-  
-  
-.caption{
-    text-transform: capitalize;
-    text-align: center;
-    color: white;
-    font-size: 2rem;
-    font-family: "AvenirNextBold", sans-serif;
 }
 
 .card-parent{
@@ -101,7 +122,6 @@ div.bar.full-bar{
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
-
 } 
 
 .service-card{
@@ -130,11 +150,11 @@ div.bar.full-bar{
   
 
 #linkedin{
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-family: "AvenirNextBold", sans-serif;
   display: flex;
   flex-flow: row nowrap;
-  align-items: baseline;
+  align-items: center;
 }
 
 #linkedin>a,#email-address>a{
@@ -158,28 +178,45 @@ div.bar.full-bar{
 }
 
 #footer-logo{
-  width: 200px;
+  width: clamp(180px,75%,275px);
   padding: 1rem;
 }
 
 
 @media screen and (max-width: 1024px) {
   .home{
+    justify-content: flex-end;
+    align-items: center;
     background-image: url('assets/images/home-mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding-right: 0;
   }
+
+  #main-logo{
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  #home-spacer{
+    margin-top: auto;
+    height: 0;
+  }
+
+
+
 }
 
 @media screen and (max-width: 768px) {
 
-  #email-address{
-    font-size: 1.5rem;
+
+  #lead{
+    font-size: 2.5rem;
   }
 
-  #footer-logo{
-    width: 200px;
+  #email-address{
+    font-size: 1.5rem;
   }
 
   #linkedin-logo {
@@ -200,14 +237,17 @@ div.bar.full-bar{
 
 @media screen and (max-width: 576px) {
 
-  #footer-logo{
-    width: 150px;
+
+  #lead{
+    font-size: 1.4rem;
   }
+
 
   #email-address{
     font-size: 1rem;
   }
 
+  
   #linkedin-logo {
     fill: white;
     width: 16px;
