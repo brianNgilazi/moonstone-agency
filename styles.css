@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'assets/fonts/fonts.css';
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 10vh 0 0 0;
+}
 :root{
   --accent: #33a9e2;
 }
@@ -244,7 +248,7 @@ div.bar.full-bar{
 
 
   #email-address{
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   
