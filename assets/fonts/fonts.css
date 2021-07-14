@@ -1,14 +1,12 @@
 @font-face {
   font-family: "MinionPro";
-  src: url("./minion-pro/MinionPro-BoldIt.otf");
+  src: url("./MinionPro-BoldIt.otf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "AvenirNextBold";
-  src: url("./avenir-next/AvenirNext-Bold-01.ttf") ;
+  src: url("./AvenirNext-Bold-01.ttf") ;
   font-display: swap;
 
 }
-
-
